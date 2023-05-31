@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "sass": "^1.62.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-watcher": "npx sass --watch src/sass/main.scss:public/styles/styles.css"
+  }
+}
