@@ -1,3 +1,90 @@
+$purple:rgb(51, 56, 137);
+
 body{
-    background: radial-gradient(circle, rgba(255,255,255,1) 50%, rgba(220,218,222,1) 100%);;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color:$purple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    header{
+
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        a{
+            color:rgba(255, 255, 255, 0.395);
+            font-size: 30px;
+            padding:0 0 25px 25px;
+        }
+        h1{
+            text-align: center;
+            color: white;
+            font-family: 'Wix Madefor Display', sans-serif;
+            font-size: 42px;
+        }
+
+    }
+    main{
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        section#score{
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+        }
+        section#coin{
+            width: 50vw;
+            height: 50vw;
+            background-color: rgb(215, 154, 42);
+            border-radius: 50%;
+            margin: 0 0 40px 0;
+        }
+
+        section#controls{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+            button:nth-of-type(1){
+                background-color: rgb(81, 81, 174);
+                border-radius: 5px;
+                font-size: 25px;
+                padding: 8px 30px;
+                border: none;
+                color: white;
+                box-shadow: white 1px 1px 5px,white -1px -1px 5px;
+            }
+            button:nth-of-type(2){
+                background-color: $purple;
+                border: white 1px solid;
+                border-radius: 5px;
+                padding: 5px 10px;
+                color: white;
+            }
+        }
+    }
+    footer{
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
 }
