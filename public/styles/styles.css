@@ -1,82 +1,110 @@
 body {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  padding: 0;
-  margin: 0;
-  height: 100vh;
-  background-color: rgb(51, 56, 137);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #24282e;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
 }
 body header {
-  width: 100%;
-  height: 30vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-}
-body header a {
-  color: rgba(255, 255, 255, 0.395);
-  font-size: 30px;
-  padding: 0 0 25px 25px;
+  width: 100%;
+  height: 25vh;
 }
 body header h1 {
   text-align: center;
   color: white;
   font-family: "Wix Madefor Display", sans-serif;
-  font-size: 42px;
+  font-size: 45px;
 }
 body main {
-  height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  border: #397c72 3px solid;
+  border-radius: 2px;
+  width: 80%;
+  height: 60vh;
+  box-shadow: #397c72 8px 8px;
 }
 body main section#score {
   display: flex;
   flex-direction: row;
   gap: 30px;
+  color: white;
+  font-weight: 400;
 }
 body main section#coin {
-  width: 50vw;
-  height: 50vw;
-  background-color: rgb(215, 154, 42);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 45vw;
+  height: 45vw;
+  background: rgb(101, 101, 101);
+  background: linear-gradient(124deg, rgb(101, 101, 101) 0%, rgb(228, 228, 228) 34%, rgb(77, 77, 77) 100%);
+  border: rgb(101, 101, 101) 15px double;
   border-radius: 50%;
-  margin: 0 0 40px 0;
+  margin: 0 0 30px 0;
+}
+body main section#coin i {
+  font-size: 100px;
+  color: rgb(101, 101, 101);
 }
 body main section#controls {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 body main section#controls button:nth-of-type(1) {
-  background-color: rgb(81, 81, 174);
+  background-color: #397c72;
   border-radius: 5px;
   font-size: 25px;
   padding: 8px 30px;
-  border: none;
+  border: #397c72 2px solid;
   color: white;
-  box-shadow: white 1px 1px 5px, white -1px -1px 5px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: 700;
+}
+body main section#controls button:nth-of-type(1):hover {
+  background-color: #bfcd64;
+  border: #bfcd64 2px solid;
+  color: white;
 }
 body main section#controls button:nth-of-type(2) {
-  background-color: rgb(51, 56, 137);
+  background-color: #24282e;
   border: white 1px solid;
   border-radius: 5px;
   padding: 5px 10px;
   color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 20px;
+}
+body main section#controls button:nth-of-type(2):hover {
+  background-color: white;
+  color: #397c72;
 }
 body footer {
-  height: 10vh;
+  height: 15vh;
   display: flex;
   flex-direction: row;
   gap: 20px;
   align-items: center;
   justify-content: center;
+  color: rgba(255, 255, 255, 0.3960784314);
 }
 body footer a {
-  color: white;
+  color: rgba(255, 255, 255, 0.3960784314);
   text-decoration: none;
 }
 

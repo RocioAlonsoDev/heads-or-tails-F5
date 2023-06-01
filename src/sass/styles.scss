@@ -1,89 +1,114 @@
-$purple:rgb(51, 56, 137);
+$background:#24282e;
+$cardBackground:#397c72;
+$cardAccent:#bfcd64;
+$translucent:#ffffff65;
 
-body{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 0;
-    margin: 0;
-    height: 100vh;
-    background-color:$purple;
+
+@mixin flexbox(){
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
 
+body{
+    @include flexbox;
+    background-color:$background;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    
     header{
-
+        @include flexbox;
         width: 100%;
-        height: 30vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        height: 25vh;
 
-        a{
-            color:rgba(255, 255, 255, 0.395);
-            font-size: 30px;
-            padding:0 0 25px 25px;
-        }
         h1{
             text-align: center;
             color: white;
             font-family: 'Wix Madefor Display', sans-serif;
-            font-size: 42px;
+            font-size: 45px;
         }
-
     }
     main{
+        @include flexbox;
+        border:$cardBackground 3px solid;
+        border-radius: 2px;
+        width: 80%;
         height: 60vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        box-shadow: $cardBackground 8px 8px;
         section#score{
             display: flex;
             flex-direction: row;
             gap: 30px;
+            color: white;
+            font-weight: 400;
         }
         section#coin{
-            width: 50vw;
-            height: 50vw;
-            background-color: rgb(215, 154, 42);
+            @include flexbox;
+            width: 45vw;
+            height: 45vw;
+            background: rgb(101,101,101);
+            background: linear-gradient(124deg, rgba(101,101,101,1) 0%, rgba(228,228,228,1) 34%, rgba(77,77,77,1) 100%);
+            border: rgb(101,101,101) 15px double;
             border-radius: 50%;
-            margin: 0 0 40px 0;
+            margin: 0 0 30px 0;
+ 
+            i{
+                font-size:100px;
+                color: rgb(101,101,101);                
+            }
         }
 
         section#controls{
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
+            @include flexbox;
+            gap: 20px;                
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
             button:nth-of-type(1){
-                background-color: rgb(81, 81, 174);
+                background-color: $cardBackground;
                 border-radius: 5px;
                 font-size: 25px;
                 padding: 8px 30px;
-                border: none;
+                border: $cardBackground 2px solid;
                 color: white;
-                box-shadow: white 1px 1px 5px,white -1px -1px 5px;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-weight: 700;
+            }
+            button:nth-of-type(1):hover{
+                background-color: $cardAccent;
+                border: $cardAccent 2px solid;
+                color:white;
             }
             button:nth-of-type(2){
-                background-color: $purple;
+                background-color: $background;
                 border: white 1px solid;
                 border-radius: 5px;
                 padding: 5px 10px;
                 color: white;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                margin-bottom: 20px;
             }
+            button:nth-of-type(2):hover{
+                background-color: white;
+                color: $cardBackground;
+
+            }
+
         }
     }
     footer{
-        height: 10vh;
+        height: 15vh;
         display: flex;
         flex-direction: row;
         gap: 20px;
         align-items: center;
         justify-content: center;
+        color: $translucent;
+        
         a{
-            color: white;
+            color: $translucent;
             text-decoration: none;
         }
     }
