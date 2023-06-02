@@ -1,0 +1,11 @@
+$background:#24282e;
+$cardBackground:#397c72;
+$cardAccent:#919e3d;
+$translucent:#ffffff65;
+
+@mixin flexbox(){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
