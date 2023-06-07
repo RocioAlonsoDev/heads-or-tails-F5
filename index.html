@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heads or Tails</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="public/styles/styles.css">
     <script src="https://kit.fontawesome.com/d97b9905ce.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,24 +19,30 @@
 
     <main>
         <section id="score">
-            <p>Heads: 0</p>
-            <p>Tails: 0</p>
+            <p id="headsCount">Heads: 0</p>
+            <p id="tailsCount">Tails: 0</p>
         </section>
         
         <section id="coin">
-            <div id="heads"><i class="fa-solid fa-head-side-virus"></i></div>
-            <div id="tails"></div>
+            <div class="heads">
+                <img src="assets/heads.png" alt="Heads">
+            </div>
+            <div class="tails">
+                <img src="assets/TAILS.png" alt="Tails">
+            </div>
         </section>
 
         <section id="controls">
-            <button>FLIP COIN</button>
-            <button>Restart count</button>
+            <button id="flip">FLIP COIN</button>
+            <button id="restart">Restart count</button>
         </section>
     </main>
 
     <footer>
-        <a href="#">How to use</a> | <a>Github</a>
+        <a href="">Github</a>
     </footer>
 
+
+    <script src="public/scripts/script.js"></script>
 </body>
 </html>
